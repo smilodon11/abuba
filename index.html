@@ -3,135 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SMILODON – Каршеринг</title>
-  <style>
-* {margin: 0; padding: 0; box-sizing: border-box;}
-body {font-family: Arial, sans-serif; color: #fff; background: url('images/фон.jpg') no-repeat center center fixed; background-size: cover; position: relative;}
-body::before {content: ''; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.5); z-index: -1;}
-header {background-color: #222; color: #fff; padding: 20px; position: relative;}
-nav {display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto;}
-nav a {color: white; text-decoration: none; margin-left: 20px; transition: color 0.3s, border-bottom 0.3s; cursor: pointer;}
-nav a:hover {color: #ffcc00; border-bottom: 2px solid #ffcc00;}
-.burger {display: none; flex-direction: column; cursor: pointer;}
-.burger div {width: 25px; height: 3px; background: #fff; margin: 5px;}
-.nav-links {display: flex;}
-main {padding: 20px;}
-.hero {min-height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;}
-.hero h1 {font-size: 3rem; margin-bottom: 10px;}
-.hero p {font-size: 1.2rem; color: #ccc;}
-.section {max-width: 1000px; margin: 40px auto; padding: 40px 20px; background-color: rgba(0, 0, 0, 0.7); border-radius: 12px; text-align: center; line-height: 1.6;}
-.section h2 {font-size: 2rem; margin-bottom: 20px; color: #ffcc00;}
-.section p {font-size: 1rem; color: #ddd;}
-.photo-section {max-width: 1200px; margin: 40px auto; text-align: center;}
-.photo-section img {max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);}
-.advantages {max-width: 1200px; margin: 60px auto; padding: 40px 20px; background-color: rgba(0, 0, 0, 0.8); border-radius: 12px; text-align: center;}
-.comparison-section {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 40px; margin-bottom: 45px; background: rgba(255, 255, 255, 0.03); padding: 32px 20px; border-radius: 12px;}
-.comparison-details {flex: 1; min-width: 300px; text-align: left;}
-.comparison-details h3 {color: #ffcc00; margin-bottom: 18px;}
-.comparison-details table {width: 100%; border-collapse: collapse; margin-bottom: 16px; color: #fff;}
-.comparison-details td {padding: 7px 10px; border-bottom: 1px solid rgba(255,255,255,0.10); font-size: 15px;}
-.comparison-details tr.total td {font-size: 17px; color: #ffcc00; font-weight: bold; border-top: 1px solid rgba(255,255,255,0.15);}
-.car-title {margin-top: 12px; font-weight: bold; font-size: 16px; color: #fff;}
-.comparison-visual {flex: 0 0 300px; text-align: center;}
-.comparison-visual img {width: 140px; margin-bottom: 16px;}
-.zero-cost {font-size: 80px; color: #18e2a9; font-weight: bold; margin-bottom: 8px;}
-.carsh-label {font-size: 22px; font-weight: 600;}
-.adv-list {display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px;}
-.adv-item {flex: 1; min-width: 280px; background-color: #1a1a1a; padding: 30px 20px; border-radius: 12px; text-align: center; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); transition: transform 0.3s;}
-.adv-item:hover {transform: translateY(-5px);}
-.adv-item h3 {color: #ffcc00; margin-bottom: 15px; font-size: 22px;}
-.adv-item p {color: #ccc; font-size: 16px;}
-@media (max-width: 1000px) {.adv-list, .comparison-section {flex-direction: column; align-items: center;}.comparison-visual {margin-top: 30px;}}
-@media (max-width: 768px) {
-  .nav-links {display: none; flex-direction: column; background: #222; position: absolute; top: 60px; right: 0; width: 200px;}
-  .nav-links a {margin: 10px 0; padding: 10px;}
-  .burger {display: flex;}
-  .hero h1 {font-size: 2rem;}
-  .hero p {font-size: 1rem;}
-}
-  </style>
+  <title>Онлайн платформа для разработки визиток</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <nav>
-      <h2><a href="index.html">SMILODON</a></h2>
-      <div class="burger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div class="nav-links">
-        <a href="#howto">Как арендовать</a>
-        <a href="#advantages">Преимущества</a>
-        <a href="Автомобили.html">Автомобили</a>
-        <a href="Тарифы.html">Тарифы</a>
-        <a href="Вопрос-ответ.html">Вопрос-ответ</a>
-      </div>
-    </nav>
+    <h1>Добро пожаловать на нашу платформу для создания визиток</h1>
+    <p>Легко создавайте и настраивайте свои визитки онлайн!</p>
+    <a href="editor.html" class="btn">Начать создание визитки</a>
   </header>
-  <main>
-    <section class="hero">
-      <h1>Каршеринг SMILODON</h1>
-      <p>Быстро. Удобно. По городу и за его пределами.</p>
-    </section>
-    <section class="section">
-      <h2>Что такое каршеринг?</h2>
-      <p>Это удобный способ аренды автомобиля через мобильное приложение. Вы получаете машину в нужное время и месте, оплачивая только время поездки. Всё просто: никаких ключей, никаких офисов – только свобода передвижения.</p>
-    </section>
-    <section class="section">
-      <h2>Почему выбирают SMILODON?</h2>
-      <p>SMILODON — это современный каршеринг нового поколения. У нас обширный автопарк и охват большинства крупных городов Казахстана: Алматы, Астана, Шымкент, Караганда и другие.</p>
-    </section>
-    <section id="howto" class="photo-section">
-      <img src="images/Как арендовать.png" alt="Описание фото">
-    </section>
-    <section id="advantages" class="advantages">
-      <h2>С нами выгодно</h2>
-      <div class="comparison-section">
-        <div class="comparison-details">
-          <h3>Преимущества</h3>
-          <table>
-            <tr class="total"><td>Затраты в год (тенге)</td><td>Личный авто</td></tr>
-            <tr><td>Бензин</td><td>314 930</td></tr>
-            <tr><td>ТО</td><td>106 340</td></tr>
-            <tr><td>КАСКО</td><td>203 273</td></tr>
-            <tr><td>ОСАГО</td><td>34 356</td></tr>
-            <tr><td>Налог</td><td>8 180</td></tr>
-            <tr><td>Мойка</td><td>86 299</td></tr>
-            <tr><td>Резина</td><td>16 360</td></tr>
-            <tr><td>Амортизация</td><td>260 942</td></tr>
-            <tr class="total"><td>Итого:</td><td>1 030 680</td></tr>
-          </table>
-          <div class="car-title">Личный автомобиль</div>
-        </div>
-        <div class="comparison-visual">
-          <img src="images/машинка.png" alt="каршеринг">
-          <div class="zero-cost">0</div>
-          <div class="carsh-label">тенге в год</div>
-          <div class="tenge-label">с SMILODON</div>
-        </div>
-      </div>
-      <div class="adv-list">
-        <div class="adv-item">
-          <h3>Современные авто</h3>
-          <p>Только новые и обслуженные машины для вашей безопасности.</p>
-        </div>
-        <div class="adv-item">
-          <h3>Умное управление</h3>
-          <p>Полный контроль через приложение: бронирование и открытие авто — в смартфоне.</p>
-        </div>
-        <div class="adv-item">
-          <h3>Честные тарифы</h3>
-          <p>Прозрачная оплата без скрытых платежей. Платите только за поездку.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <script>
-    function toggleMenu() {
-      const nav = document.querySelector('.nav-links');
-      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-    }
-  </script>
 </body>
 </html>
